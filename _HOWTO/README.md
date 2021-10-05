@@ -38,5 +38,5 @@ Font colors for keywords, variables, etc. are established conventions within the
 With any coding project, it's also imperative to add a debugging console. VBA refers to this as the **Immediate Window**. Toggle this with either the shortcut `cntrl + g` or:
 > View -> Immediate Window
 
-![.](https://raw.githubusercontent.com/jaimiles23/VBA-Operations/main/_HOWTO/images/HelloWorld?raw=true)
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_HOWTO/images/HelloWorld.png?raw=true)
 

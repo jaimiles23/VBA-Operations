@@ -11,7 +11,11 @@ VBA Macros are tied to workbooks. For instance, a user may write a VBA macro wit
 Your Excel personal workbook is available here - you will almost never need to access is manually. Office-365 applications will automaticlaly load the workbook with the application:
     `C:\Users\User Name\AppData\Roaming\Microsoft\Excel\XLSTART`
 
-## GUI Environment
 
-- Change font
 - Rename Modules
+
+## GUI Environment
+The Office VBA IDE is a harsh environment to develop it. I've been tempted on numerous occassions to switch back & forth with VS Code. However, there are undeniable benefits to use the native IDE. For instance, direct access to the data. There are a number of ways to make the enviornment more suitable.
+
+### Bigger Font
+

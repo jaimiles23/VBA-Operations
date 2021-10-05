@@ -8,11 +8,12 @@ This repository focuses on Macros for your Personal Workbook. Personal Macros ar
 ## Personal Workbook
 VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal workbook is tied to your Office Account and is accessible between files. 
 
-Your Excel personal workbook is available here - you will almost never need to access is manually. Office-365 applications will automaticlaly load the workbook with the application:
+Your Excel personal workbook is available here - you will almost never need to access is manually. Office-365 applications will automatically load the workbook with the application:
     `C:\Users\User Name\AppData\Roaming\Microsoft\Excel\XLSTART`
 
 
-- Rename Modules
+## Renaming Modules
+**TODO**: Come back & adjust after building Personal workbook.
 
 ## GUI Environment
 The Office VBA IDE is a harsh environment to develop it. I've been tempted on numerous occassions to switch back & forth with VS Code. However, there are undeniable benefits to use the native IDE. For instance, direct access to the data. There are a number of ways to make the enviornment more suitable.
@@ -22,17 +23,20 @@ My eyes hurt looking at the VBA IDE:
 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_HOWTO/images/IDE_UnadjustedFont.png?raw=true)
 
-There's no intuitive `cntrl + +` or `cntrl + -` shortcuts to adjust zoom of your VBA IDE. In fact, there is no zoom function at all so far as I can tell! You can, however, adjust the size of the text displayed. 
+There's no intuitive `cntrl + +` or `cntrl + -` shortcuts to adjust zoom of your VBA IDE. In fact, there is no zoom function at all so far as I can tell! You can adjust the size of the text displayed. 
 > Tools -> Options -> Editor Format
 
 I recommend sticking to the majority of default options until there's a specific need not to. 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_HOWTO/images/Options_FontEditor.png?raw=true)
 
 I've found size 16 works well for my aging eyes. 
-![.](https://raw.githubusercontent.com/jaimiles23/VBA-Operations/main/_HOWTO/images/IDE_LargerFont.png)
+![.](https://raw.githubusercontent.com/jaimiles23/VBA-Operations/main/_HOWTO/images/IDE_LargerFont.png?raw=true)
 
-Font colors for keywords, variables, etc. are established conventions within the VBA community. Changing these will throw off other users trying to help you.
+Font colors for keywords, variables, etc. are established conventions within the VBA community. Changing may confuse collaborators.
 
 ### Debugging Console
+With any coding project, it's also imperative to add a debugging console. VBA refers to this as the **Immediate Window**. Toggle this with either the shortcut `cntrl + g` or:
+> View -> Immediate Window
 
+![.](https://raw.githubusercontent.com/jaimiles23/VBA-Operations/main/_HOWTO/images/HelloWorld?raw=true)
 

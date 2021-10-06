@@ -8,12 +8,18 @@ This repository focuses on Macros for your Personal Workbook. Personal Macros ar
 ## Personal Workbook
 VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal workbook is tied to your Office Account and is accessible between files. 
 
-Your Excel personal workbook is available here - you will almost never need to access is manually. Office-365 applications will automatically load the workbook with the application:
+You can easily create a Personal workbook by recoridng a macro and choosing to save the macro in your "Personal Workbook"
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_HOWTO/images/StoreInPersonalWb.png?raw=true)
+
+Your Excel personal workbook is available below - you will almost never need to access it. Office-365 applications will automatically load the workbook with the application:
     `C:\Users\User Name\AppData\Roaming\Microsoft\Excel\XLSTART`
 
 
 ## Renaming Modules
-**TODO**: Come back & adjust after building Personal workbook.
+It's just as important to modulate the code in your Personal Workbook as it is any other project. In fact, I'll argue it's more important as VBA Business Users run myriad macros on highly variable projects, with month+ timeframes between runs.
+
+
+
 
 ## GUI Environment
 The Office VBA IDE is a harsh environment to develop it. I've been tempted on numerous occassions to switch back & forth with VS Code. However, there are undeniable benefits to use the native IDE. For instance, direct access to the data. There are a number of ways to make the enviornment more suitable.

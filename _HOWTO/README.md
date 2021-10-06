@@ -18,7 +18,14 @@ Your Excel personal workbook is available below - you will almost never need to 
 ## Renaming Modules
 It's just as important to modulate the code in your Personal Workbook as it is any other project. In fact, I'll argue it's more important as VBA Business Users run myriad macros on highly variable projects, with month+ timeframes between runs.
 
+To rename a module, 
+1. Select the Module
+2. Go to View -> Properties Window
+3. Rename the Module
+   1. Only use alphanumeric characters.
 
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_HOWTO/images/RenameModule.png?raw=true)
 
 
 ## GUI Environment

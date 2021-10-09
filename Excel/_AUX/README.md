@@ -18,6 +18,7 @@ Public Sub RemoveAllSelectionBorders()
     Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
 End Sub
 ```
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/aux_funcs/RemoveBorders.png?raw=true)
 
 ### Calling Public Code
 
@@ -30,3 +31,5 @@ Sub LargeFont()
     Selection.Font.Size = 14
 End Sun
 ```
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/aux_funcs/CallPublicExample.png?raw=true)

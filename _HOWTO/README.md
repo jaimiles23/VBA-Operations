@@ -1,13 +1,10 @@
-## README
-This file contains information on how to use your Personal Workbook and customize the VBA GUI.
+# HOWTO 
+This repository focuses on Macros for your Personal Macrobook. Personal Macros are used in your day-to-day operations and are applicable to a wider scope of projects. Contrast this with Macros written within a specific file that can only be accessed when that file is open. I focus on Personal Macros given their breadth and general usefulness for business users.
 
+## Personal Macrobook
+VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal macrobook is tied to your Office Account and is accessible between files of the same application. A macro in your Personal Excel Macrobook can be used in two separate files without the other being open. This HOWTO focuses on Excel, as it is the application with the most macro development. The same principles are applicable in other standard Office Suite Products, i.e., Word & PPT. 
 
-# HOWTO
-This repository focuses on Macros for your Personal Workbook. Personal Macros are used in your day-to-day operations and are applicable to a wider scope of projects. Contrast this with Macros written within a specific file that can only be accessed when that file is open. Personal Macros are focused given their breadth and general usefulness.
-
-## Personal Workbook
-VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal workbook is tied to your Office Account and is accessible between files. 
-
+### Creating a Personal Workbook
 You can easily create a Personal workbook by recoridng a macro and choosing to save the macro in your "Personal Workbook"
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/StoreInPersonalWb.png?raw=true)
 
@@ -15,7 +12,9 @@ Your Excel personal workbook is available below - you will almost never need to 
     `C:\Users\User Name\AppData\Roaming\Microsoft\Excel\XLSTART`
 
 
-## Renaming Modules
+## Customization 
+
+### Renaming Modules
 It's just as important to modulate the code in your Personal Workbook as it is any other project. In fact, I'll argue it's more important as VBA Business Users run myriad macros on highly variable projects, with month+ timeframes between runs.
 
 To rename a module, 
@@ -28,10 +27,10 @@ To rename a module,
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/RenameModule.png?raw=true)
 
 
-## GUI Environment
+### GUI Environment
 The Office VBA IDE is a harsh environment to develop it. I've been tempted on numerous occassions to switch back & forth with VS Code. However, there are undeniable benefits to use the native IDE. For instance, direct access to the data. There are a number of ways to make the enviornment more suitable.
 
-### Bigger Font
+#### Bigger Font
 My eyes hurt looking at the VBA IDE:
 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/IDE_UnadjustedFont.png?raw=true)
@@ -47,7 +46,7 @@ I've found size 16 works well for my aging eyes.
 
 Font colors for keywords, variables, etc. are established conventions within the VBA community. Changing may confuse collaborators.
 
-### Debugging Console
+#### Debugging Console
 With any coding project, it's also imperative to add a debugging console. VBA refers to this as the **Immediate Window**. Toggle this with either the shortcut `cntrl + g` or:
 > View -> Immediate Window
 

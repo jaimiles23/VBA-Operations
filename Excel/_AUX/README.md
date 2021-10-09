@@ -32,4 +32,4 @@ Sub LargeFont()
 End Sun
 ```
 
-![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/aux_funcs/CallPublicExample.png?raw=true)
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/aux_funcs/CallPublicExample.PNG?raw=true)

@@ -1,5 +1,5 @@
 # HOWTO 
-This repository focuses on Macros for your Personal Macrobook. Personal Macros are used in your day-to-day operations and are applicable to a wider scope of projects. Contrast this with Macros written within a specific file that can only be accessed when that file is open. I focus on Personal Macros given their breadth and usefulness for business users.
+This repository focuses on Macros for your Personal Macrobook. Personal Macros are used in your day-to-day operations and are applicable to a wider scope of projects. Contrast this with Macros written within a specific file, which can only be accessed when that file is open. This HOWTO focuses on adaptations of the Personal Macrobook. 
 
 - [HOWTO](#howto)
   - [Personal Macrobook](#personal-macrobook)

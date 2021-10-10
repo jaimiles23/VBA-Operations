@@ -73,10 +73,12 @@ The VBA IDE handles the .bas interpretation behind the scene and the business-us
 
 **Examples:**
 The code `Attribute VB_Name = "z_Aux"` tells the IDE to import the code into a module named *Z_Aux*.
-![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attrb_module_name.png?raw=true)
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attrb_module_name.PNG?raw=true)
 
 And the code `Attrbitue make_dir.VB_ProcData.VB_Invoke_Func = "D\n14"` tells the IDE to set the keyboard short-cut to `cntrl + shift + d`. 
-![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attr_VB_Invoke_Func.png?raw=true)
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attr_VB_Invoke_Func.PNG?raw=true)
 
 
 ### Importing

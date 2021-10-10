@@ -1,14 +1,16 @@
 # README
 
 ## Purpose 
-This repository details VBA functions useful in an operational environment. It assumes users have basic familiarty with VBA, for instance being emergent Business Users via the "Record Macro" Developer function.
+This repository documents VBA functions intended for business users in an operational environment. It assumes users have basic familiarty with VBA, for instance being emergent Business Users via the "Record Macro" Developer function. 
 
-## Structure
+## Contents
 Sub-directories include the following
-    1. [Excel](Excel)
-    2. [Word]()
-    3. [PowerPoint]()
-    4. HOWTO[]
+    1. [Excel](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel): Macros & Instructions
+    2. [Word]() TODO
+    3. [PowerPoint]() TODO
+    4. [HOWTO](https://github.com/jaimiles23/VBA-Operations/tree/main/_HOWTO): Instructions on VBE IDE.
+
+
 
 
 

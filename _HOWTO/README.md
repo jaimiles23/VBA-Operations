@@ -10,9 +10,6 @@ This repository focuses on Macros for your Personal Macrobook. Personal Macros a
       - [Bigger Font](#bigger-font)
       - [Debugging Console](#debugging-console)
   - [Sharing Code](#sharing-code)
-    - [Importing](#importing)
-    - [Exporting](#exporting)
-
 
 ## Personal Macrobook
 VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal macrobook is tied to your Office Account and is accessible between files of the same application. A macro in your Personal Excel Macrobook can be used in two separate files without the other being open. This HOWTO focuses on Excel, as it is the application with the most macro development. The same principles are applicable in other standard Office Suite Products, i.e., Word & PPT. 
@@ -67,11 +64,13 @@ With any coding project, it's also imperative to add a debugging console. VBA re
 
 
 ## Sharing Code
+The VBA Editor automated importing & exporting individual files. You may not conduct this operation on multiple files at a time.
+
 Modules, Forms, and Classes can be imported and exported as .bas files. `.bas` files are the abbreviation for Beginner's All-purpose Symbolic Instruction Code (BASIC). .bas are functionally identical to the code shown in the VBA editor. The key difference is the presence of file attributes. The VBA IDE will automatically interpretes these attributes when importing a file.
 
 The VBA IDE handles the .bas interpretation behind the scene and the business-user does not need to understand the .bad differences. However, a basic understanding is generally useful for troubleshooting. 
 
-**Examples:**
+**Examples**
 The code `Attribute VB_Name = "z_Aux"` tells the IDE to import the code into a module named *Z_Aux*.
 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attrb_module_name.png?raw=true)
@@ -81,18 +80,8 @@ And the code `Attrbitue make_dir.VB_ProcData.VB_Invoke_Func = "D\n14"` tells the
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attr_VB_Invoke_Func.png?raw=true)
 
 
-### Importing
-The VBA editor 
-
-### Exporting
-
-
-
-
-
-
-
-
+**IDE navigation**
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/Import_Export_IDE.png?raw=true)
 
 
 

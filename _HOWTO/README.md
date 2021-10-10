@@ -10,6 +10,8 @@ This repository focuses on Macros for your Personal Macrobook. Personal Macros a
       - [Bigger Font](#bigger-font)
       - [Debugging Console](#debugging-console)
   - [Sharing Code](#sharing-code)
+    - [.bas extra examples](#bas-extra-examples)
+    - [IDE import/export](#ide-importexport)
 
 
 ## Personal Macrobook
@@ -71,7 +73,7 @@ Modules, Forms, and Classes can be imported and exported as .bas files. `.bas` f
 
 The VBA IDE handles the .bas interpretation behind the scene and the business-user does not need to understand the .bad differences. However, a basic understanding is generally useful for troubleshooting. 
 
-**Examples**
+### .bas extra examples
 The code `Attribute VB_Name = "z_Aux"` tells the IDE to import the code into a module named *Z_Aux*.
 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attrb_module_name.png?raw=true)
@@ -81,7 +83,7 @@ And the code `Attrbitue make_dir.VB_ProcData.VB_Invoke_Func = "D\n14"` tells the
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/attr_VB_Invoke_Func.png?raw=true)
 
 
-**IDE navigation**
+### IDE import/export 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/Import_Export_IDE.png?raw=true)
 
 

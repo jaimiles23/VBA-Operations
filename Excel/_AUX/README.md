@@ -1,8 +1,14 @@
-## Auxiliary Functions
-
+# Auxiliary Functions
 VBA is a verbose language. Business Users who record macros can create scripts 100s of lines long in a matter of minutes. This compounds to create steep barriers of entry for aspiring VBA developers. 
 
-### Modulation with `Public`
+- [Auxiliary Functions](#auxiliary-functions)
+  - [Modulation with `Public`](#modulation-with-public)
+    - [Calling Public Code](#calling-public-code)
+  - [z_Aux.bas](#z_auxbas)
+    - [RemoveAllSelectionBorders](#removeallselectionborders)
+    - [ApplyBottomBorder](#applybottomborder)
+
+## Modulation with `Public`
 The universal programming solution to trimming the verbose (among other things) is modulating your code. To do so in your Personal Macrobook, you'll likely want to start with an Auxiliary file. This auxiliary file can contain functions and subroutines that are accessible to other code. Inter-module development is possible by declaring the subroutine/function with the `Public` keyword. For instance, 
 
 ```vb
@@ -31,5 +37,14 @@ Sub LargeFont()
     Selection.Font.Size = 14
 End Sun
 ```
-
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/aux_funcs/CallPublicExample.PNG?raw=true)
+
+
+## z_Aux.bas
+Auxiliary Sub-routines inside the .bas file
+
+### RemoveAllSelectionBorders
+Removes all borders from selection
+
+### ApplyBottomBorder
+Applies bottom borders to selection

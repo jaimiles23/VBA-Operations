@@ -5,10 +5,11 @@ This repository documents VBA functions intended for business users in an operat
 
 ## Contents
 Sub-directories include the following
-    1. [Excel](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel): Macros & Instructions
-    2. [Word]() TODO
-    3. [PowerPoint]() TODO
-    4. [HOWTO](https://github.com/jaimiles23/VBA-Operations/tree/main/_HOWTO): Instructions on VBE IDE.
+
+1. [Excel](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel): Macros & Instructions
+2. [Word]() TODO
+3. [PowerPoint]() TODO
+4. [HOWTO](https://github.com/jaimiles23/VBA-Operations/tree/main/_HOWTO): Instructions on VBE IDE.
 
 
 

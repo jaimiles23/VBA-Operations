@@ -11,6 +11,7 @@ This repository focuses on Macros for your Personal Macrobook. Personal Macros a
       - [Debugging Console](#debugging-console)
   - [Sharing Code](#sharing-code)
 
+
 ## Personal Macrobook
 VBA Macros are tied to workbooks. For instance, a user may write a VBA macro within an Excel workbook and then that macro is saved within that Workbook.  Office-365 Applications also contain a **Personal Workbook** A personal macrobook is tied to your Office Account and is accessible between files of the same application. A macro in your Personal Excel Macrobook can be used in two separate files without the other being open. This HOWTO focuses on Excel, as it is the application with the most macro development. The same principles are applicable in other standard Office Suite Products, i.e., Word & PPT. 
 
@@ -27,18 +28,18 @@ Your Excel personal workbook is available below - you will almost never need to 
 ### Renaming Modules
 It's just as important to modulate the code in your Personal Workbook as it is any other project. In fact, I'll argue it's more important as VBA Business Users run myriad macros on highly variable projects, with month+ timeframes between runs.
 
-To rename a module, 
+To rename a module: 
 1. Select the Module
 2. Go to View -> Properties Window
 3. Rename the Module
-   1. Only use alphanumeric characters.
-
+   1. Only use alphanumeric characters
 
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/howto/RenameModule.png?raw=true)
 
 
 ### GUI Environment
 The Office VBA IDE is a harsh environment to develop it. I've been tempted on numerous occassions to switch back & forth with VS Code. However, there are undeniable benefits to use the native IDE. For instance, direct access to the data. There are a number of ways to make the enviornment more suitable.
+
 
 #### Bigger Font
 My eyes hurt looking at the VBA IDE:

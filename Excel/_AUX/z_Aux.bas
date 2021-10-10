@@ -20,3 +20,14 @@ Public Sub ApplyBottomBorder()
     End With
 End Sub
 
+Public Sub MoveDownEnterValue(Value As String)
+    ' Move down 1 & enter value
+    ActiveCell.Offset(1, 0).Select
+    ActiveCell.FormulaR1C1 = Value
+End Sub
+
+Public Sub MoveRightEnterValue(Value As String)
+    ' Move Right & enter Value
+    ActiveCell.Offset(0, 1).Select
+    ActiveCell.FormulaR1C1 = Value
+End Sub

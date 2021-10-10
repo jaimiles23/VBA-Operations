@@ -5,8 +5,8 @@ VBA is a verbose language. Business Users who record macros can create scripts 1
   - [Modulation with `Public`](#modulation-with-public)
     - [Calling Public Code](#calling-public-code)
   - [z_Aux.bas](#z_auxbas)
-    - [RemoveAllSelectionBorders](#removeallselectionborders)
-    - [ApplyBottomBorder](#applybottomborder)
+    - [Borders](#borders)
+    - [Move & Enter](#move--enter)
 
 ## Modulation with `Public`
 The universal programming solution to trimming the verbose (among other things) is modulating your code. To do so in your Personal Macrobook, you'll likely want to start with an Auxiliary file. This auxiliary file can contain functions and subroutines that are accessible to other code. Inter-module development is possible by declaring the subroutine/function with the `Public` keyword. For instance, 
@@ -43,8 +43,18 @@ End Sun
 ## z_Aux.bas
 Auxiliary Sub-routines inside the .bas file
 
-### RemoveAllSelectionBorders
+### Borders
+**RemoveAllSelectionBorders**
 Removes all borders from selection
 
-### ApplyBottomBorder
+**ApplyBottomBorder**
 Applies bottom borders to selection
+
+### Move & Enter
+
+**MoveRightEnterValue**
+Moves 1 cell to the right & enters the string parameter
+
+**MoveDownEnterValue**
+Moves 1 cell down & enters the string paramater
+

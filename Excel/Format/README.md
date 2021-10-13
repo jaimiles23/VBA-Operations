@@ -12,7 +12,7 @@ Similar to Word, Excel Styling allows users to create & customize Titles & Heade
 
 Unfortunately, Excel has less support than Word for generalizability of themes. Thus, users must manually adjust the styles in each document that they receive. To solve this challenge, I use keyboard short-cut macros to create sections, headers, and flags. `Format_section` & `format_header` demonstrated below.
 
-![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Format/Format_SectionHeader_Example.png?raw=true)
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Format/Format_SectionHeader_Example.gif?raw=true)
 
 
 ### format_section

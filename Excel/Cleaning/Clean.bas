@@ -1,17 +1,21 @@
 Attribute VB_Name = "Clean"
 
+''''' Auxiliary Macros
+
 Private Sub FindAndReplaceSelection(find_str As Variant, replace_str As String)
     ' Replace selection values.
     Selection.Replace What:=find_str, _
             Replacement:=replace_str, LookAt:=xlPart _
             , SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
-            ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+            ReplaceFormat:=False, ' FormulaVersion:=xlReplaceFormula2   ' NOTE: some objects won't be accessible in older versions.
 End Sub
 
+
 Private Sub ID_Empty()
-' TEMP FIXES - REGEX WILL COUNT BLANK CELLS>
+    ' Fill empty to avoid wildcard recall overflow
     FindAndReplaceSelection "", "EMPTY"
 End Sub
+
 
 Private Sub RM_Empty()
     FindAndReplaceSelection "EMPTY", ""
@@ -19,42 +23,9 @@ Private Sub RM_Empty()
 End Sub
 
 
+''''' Clean String Macros
 
-Private Sub CleanDigits()
-    ' Only allow digits in range. Otherwise, remove. ALSO APPLIES TO STRING.
-    ' Note: only select values to clean - otherwise, will crash
-
-    ''''' Change Me <-------
-    MIN_ALLOWED = 1
-    MAX_ALLOWED = 4
-    REPLACE_VAL = ""
-    
-    Debug.Print "MinVal: " & MIN_ALLOWED
-    Debug.Print "MaxVal: " & MAX_ALLOWED
-    Debug.Print "Replace: " & REPLACE_VAL
-    
-    Dim Rng As Range
-    Dim WorkRng As Range
-    Set WorkRng = Application.Selection
-    
-    On Error Resume Next
-    For Each Rng In WorkRng
-    
-        Rng.Value = CInt(Rng.Value)         ' Convert values to integers
-        
-        If ( _
-            Not IsNumeric(Rng.Value) Or _
-            Rng.Value > MAX_ALLOWED Or _
-            Rng.Value < MIN_ALLOWED _
-        ) Then
-            Rng.Value = REPLACE_VAL
-        End If
-    Next
-End Sub
-
-
-
-Private Sub FixAssessmentPeriod()
+Private Sub CleanString_AssessmentPeriod()
     ' Makes assessment periods uniform, e.g., initial, updated, DC, etc.
     ' Uses wildcards for cleaning. Must fill empty spaces before and after, else these are filled.
     ID_Empty        ' Identify & fill empty cells.
@@ -153,7 +124,7 @@ Private Sub makeLower()
 End Sub
 
 
-Sub Fix_YN()
+Sub CleanString_YN()
     ' Makes Y/N rseponses uniform
     makeLower
     ID_Empty
@@ -199,7 +170,7 @@ Sub Fix_YN()
 End Sub
 
 
-Private Sub Clean_Gender()
+Private Sub CleanString_Gender()
     ' Cleans gender column. 
     ID_Empty
     
@@ -247,7 +218,7 @@ Private Sub Clean_Gender()
     RM_Empty
 End Sub
 
-Private Sub Clean_Language()
+Private Sub CleanString_Language()
     ''''' Clean Languages
     ID_Empty
     
@@ -278,7 +249,7 @@ Private Sub Clean_Language()
 End Sub
 
 
-Private Sub Clean_Ethnicity()
+Private Sub CleanString_Ethnicity()
     ' Clean race & ethnicity.
     ' DOUBLE CHECK CODES BEFORE RUNNING
     ' Start with mixed beforehand. Order matters.
@@ -365,7 +336,43 @@ Private Sub Clean_Ethnicity()
     
     RM_Empty
 End Sub
+''''' Clean Integer Macros
 
+
+Private Sub Clean_Digits()
+    ' Only allow digits in range. Otherwise, remove. ALSO APPLIES TO STRING.
+    ' Note: only select values to clean - otherwise, will crash
+
+    ''''' Change Me <-------
+    MIN_ALLOWED = 1
+    MAX_ALLOWED = 4
+    REPLACE_VAL = ""
+    
+    Debug.Print "MinVal: " & MIN_ALLOWED
+    Debug.Print "MaxVal: " & MAX_ALLOWED
+    Debug.Print "Replace: " & REPLACE_VAL
+    
+    Dim Rng As Range
+    Dim WorkRng As Range
+    Set WorkRng = Application.Selection
+    
+    On Error Resume Next
+    For Each Rng In WorkRng
+    
+        Rng.Value = CInt(Rng.Value)         ' Convert values to integers
+        
+        If ( _
+            Not IsNumeric(Rng.Value) Or _
+            Rng.Value > MAX_ALLOWED Or _
+            Rng.Value < MIN_ALLOWED _
+        ) Then
+            Rng.Value = REPLACE_VAL
+        End If
+    Next
+End Sub
+
+
+'''''' Parse Columns Macros
 
 Sub ParseMultipleValuesIntoColumns()
     ' Parses multiple numeric values in a column into separate columns.

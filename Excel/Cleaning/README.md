@@ -1,4 +1,20 @@
 # Cleaning Scripts
+- [Cleaning Scripts](#cleaning-scripts)
+  - [Purpose](#purpose)
+  - [String Cleaning Methodology](#string-cleaning-methodology)
+    - [Array replacement](#array-replacement)
+    - [Filling empty space](#filling-empty-space)
+      - [ID_Empty](#id_empty)
+      - [RM_EMPTY](#rm_empty)
+  - [Macro Efficient](#macro-efficient)
+  - [Macro showcase](#macro-showcase)
+    - [CleanString_AssessmentPeriod](#cleanstring_assessmentperiod)
+    - [CleanString_YN](#cleanstring_yn)
+    - [CleanString_Gender](#cleanstring_gender)
+    - [CleanString_Language](#cleanstring_language)
+    - [CleanString_Ethnicity](#cleanstring_ethnicity)
+    - [Clean_Digits](#clean_digits)
+    - [ParseMultipleValuesIntoColumns](#parsemultiplevaluesintocolumns)
 
 ## Purpose
 I worked with a Behavioral Health organization across the state. A historically underfunded field, it was common practice for data entry to take place in an Excel workbook with no data validation restrictions. Each data set requires extensive cleaning and formatting before uploading it to the centralized database. With irregular formats, it makes sense to have these cleaning scripts easily available with fluid reference structures via Personal Macrobooks. These macros are similar yet independent of the ones I developed in the workplace to solve this challenge.

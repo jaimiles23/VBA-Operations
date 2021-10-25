@@ -42,30 +42,47 @@ Macro Demonstration.
 > Select relevant column and run
 
 Useful for cleaning longitudinal survey instruments. 
+
 ![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_Period.gif?raw=true)
-
-
 
 ### CleanString_YN
 > Select relevant column and run
 
+Clean Yes/No column with different codings & misspellings.
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_YesNo.gif?raw=true)
+
+
 ### CleanString_Gender
 > Select relevant column and run
+
+Clean gender column with misspellings. Assumes gender binary and other.
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_Gender.gif?raw=true)
 
 ### CleanString_Language
 > Select relevant column and run
 
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_Language.gif?raw=true)
+
 ### CleanString_Ethnicity
 > Select relevant column and run
+
+Create uniform ethnicity for analysis.
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_Ethnicity.gif?raw=true)
 
 ### Clean_Digits
 > Select relevant column and run
 
+Clean column to only accept digits within range. Example below only allows values between 1 and 4 (inclusive).
+
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/Clean_Digits.gif?raw=true)
+
 ### ParseMultipleValuesIntoColumns
 > Select relevant column and run
 
+Parse multiple values into a column into separate columns. Ignores delimiter and instead assumes numeric codings, from 1 to 10. Must specify number of values to search.
 
 
-
-
-
+![.](https://github.com/jaimiles23/VBA-Operations/blob/main/_images/Excel/Cleaning/ParseValues.gif?raw=true)

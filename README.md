@@ -7,6 +7,7 @@ This repository documents VBA functions intended for business users in an operat
 Sub-directories include the following
 
 1. [Excel](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel)
+   - [About](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel)
    - [Aux Functions](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel/_AUX)
    - [Cleaning](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel/Cleaning)
    - [Formatting](https://github.com/jaimiles23/VBA-Operations/tree/main/Excel/Format)
